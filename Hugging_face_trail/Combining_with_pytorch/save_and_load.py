@@ -27,9 +27,11 @@ with torch.no_grad():
     print(labels)
 
 
+#Saving model
 save_directory = "saved"
 tokenizer.save_pretrained(save_directory)
 model.save_pretrained(save_directory)
 
-##Loading
-
+#Loading model
+tok = AutoTokenizer.from_pretrained(save_directory)
+mod = AutoModelForSequenceClassification.from_pretrained(save_directory)
