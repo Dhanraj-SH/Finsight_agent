@@ -3,4 +3,5 @@ Hugging_face_trail/Combining_with_pytorch/saved/
 models/
 __pycache__/
 src/agent/__pycache__/
+src/api/__pycache__/
 .env
